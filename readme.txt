@@ -25,6 +25,5 @@ struct number:
 tui.cpp:
 	请见代码注释,不是我写的
 目前存在的问题
-	add相反数或subtract相同数字不出结果
 	除法太慢了
 会改的，但是没时间了
