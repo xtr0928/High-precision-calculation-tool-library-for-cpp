@@ -409,13 +409,13 @@ inline number add(number number1, number number2) {
                 finally_number.data[sizeb_1 + ldp_sdp - sizes - x] = numberb.data[sizeb_1 + ldp_sdp - sizes - x];
             }
         }
-        if (finally_number.data[0] == 0) {
-            finally_number.data.erase(finally_number.data.begin());
-            finally_number.size = numberb.size - 1;
-        }
-        else {
-            finally_number.size = numberb.size;
-        }
+        finally_number.size = numberb.size;
+        for(;finally_number.size>1;){
+			if (finally_number.data[0] == 0) {
+			        finally_number.data.erase(finally_number.data.begin());
+			        finally_number.size = numberb.size - 1;
+			}
+		}
     }
     return finally_number;
 }
