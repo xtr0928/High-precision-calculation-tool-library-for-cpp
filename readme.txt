@@ -24,3 +24,7 @@ struct number:
 	inline number division(number number1, number number2,uint64_t npo) 将两个number相除,默认精度到小数点后npo位
 tui.cpp:
 	请见代码注释,不是我写的
+目前存在的问题
+	add相反数或subtract相同数字不出结果
+	除法太慢了
+会改的，但是没时间了
